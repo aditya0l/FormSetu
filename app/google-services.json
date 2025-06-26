@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "990863922858",
+    "project_id": "formsetu",
+    "storage_bucket": "formsetu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990863922858:android:b502e832dc0912aa8122d3",
+        "android_client_info": {
+          "package_name": "com.example.formsetu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlCyBxm3B33z64xdb3PjYWWTPK2ElZ_tg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

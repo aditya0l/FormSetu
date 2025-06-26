@@ -1,0 +1,367 @@
+{
+    "title": {
+      "en": "PAN Card Application (Form 49A)",
+      "hi": "पैन कार्ड आवेदन (फॉर्म 49A)"
+    },
+    "fields": [
+      {
+        "type": "text",
+        "key": "full_name_title",
+        "label": {
+          "en": "Title",
+          "hi": "श्री/श्रीमती/कुमारी"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 700,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "full_name_first",
+        "label": {
+          "en": "First Name",
+          "hi": "प्रथम नाम"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 120,
+          "y": 680,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "full_name_middle",
+        "label": {
+          "en": "Middle Name",
+          "hi": "मध्य नाम"
+        },
+        "required": false,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 140,
+          "y": 660,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "full_name_last",
+        "label": {
+          "en": "Last Name",
+          "hi": "अंतिम नाम"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 160,
+          "y": 640,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "abbreviated_name",
+        "label": {
+          "en": "Abbreviated Name",
+          "hi": "संक्षिप्त नाम"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 620,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "other_name",
+        "label": {
+          "en": "Other Name Known By",
+          "hi": "अन्य नाम (यदि कोई हो)"
+        },
+        "required": false,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 600,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "dropdown",
+        "key": "gender",
+        "label": {
+          "en": "Gender",
+          "hi": "लिंग"
+        },
+        "options": ["Male", "Female", "Transgender"],
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 580,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "date",
+        "key": "dob",
+        "label": {
+          "en": "Date of Birth",
+          "hi": "जन्म तिथि"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 560,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "checkbox",
+        "key": "single_parent",
+        "label": {
+          "en": "Are you a single parent (Mother only)",
+          "hi": "एकल माता-पिता"
+        },
+        "options": ["Yes"],
+        "required": false,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 540,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "father_name",
+        "label": {
+          "en": "Father's Name",
+          "hi": "पिता का नाम"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 520,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "mother_name",
+        "label": {
+          "en": "Mother's Name",
+          "hi": "माता का नाम"
+        },
+        "required": false,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 500,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "dropdown",
+        "key": "name_on_pan",
+        "label": {
+          "en": "Name to be printed on PAN",
+          "hi": "पैन पर छपा नाम"
+        },
+        "options": ["Father's Name", "Mother's Name"],
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 480,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "address",
+        "label": {
+          "en": "Address (Residential or Office)",
+          "hi": "पता"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 460,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "radio",
+        "key": "address_for_communication",
+        "label": {
+          "en": "Address for Communication",
+          "hi": "पत्र व्यवहार का पता"
+        },
+        "options": ["Residence", "Office"],
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 440,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "mobile_number",
+        "label": {
+          "en": "Mobile Number",
+          "hi": "मोबाइल नंबर"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 420,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "email_id",
+        "label": {
+          "en": "Email ID",
+          "hi": "ईमेल आईडी"
+        },
+        "required": false,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 400,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "dropdown",
+        "key": "applicant_status",
+        "label": {
+          "en": "Status of Applicant",
+          "hi": "आवेदक की स्थिति"
+        },
+        "options": ["Individual", "Company", "Trust", "Firm", "HUF", "AOP", "BOI", "LLP", "Government", "Others"],
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 380,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "aadhaar_or_eid",
+        "label": {
+          "en": "Aadhaar Number or Enrollment ID",
+          "hi": "आधार / ईआईडी"
+        },
+        "required": false,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 360,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "checkbox",
+        "key": "source_of_income",
+        "label": {
+          "en": "Source of Income",
+          "hi": "आय का स्रोत"
+        },
+        "options": ["Salary", "Business", "Capital Gain", "Other"],
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 340,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "representative_assessee",
+        "label": {
+          "en": "Representative Assessee Details",
+          "hi": "प्रतिनिधि असेसी"
+        },
+        "required": false,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 320,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "text",
+        "key": "documents_submitted",
+        "label": {
+          "en": "Documents Submitted",
+          "hi": "जमा दस्तावेज"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 300,
+          "fontSize": 12
+        }
+      },
+      {
+        "type": "signature",
+        "key": "declaration_signature",
+        "label": {
+          "en": "Declaration Signature",
+          "hi": "हस्ताक्षर"
+        },
+        "required": true,
+        "pdf_mapping": {
+          "template": "pan_form.pdf",
+          "page": 1,
+          "x": 100,
+          "y": 280,
+          "fontSize": 12
+        }
+      }
+    ]
+  }
+  

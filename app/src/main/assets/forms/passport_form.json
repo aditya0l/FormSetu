@@ -1,0 +1,38 @@
+{
+  "title": {
+    "en": "Passport Application Form",
+    "hi": "पासपोर्ट आवेदन फॉर्म"
+  },
+  "fields": [
+    { "type": "dropdown", "key": "applying_for", "label": { "en": "Applying For", "hi": "-" }, "options": ["Fresh", "Reissue"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 700, "fontSize": 12 } },
+    { "type": "dropdown", "key": "reason_for_reissue", "label": { "en": "Reason for Reissue", "hi": "-" }, "options": ["Expired", "Lost", "Damaged", "Exhausted Pages", "Change in Personal Particulars"], "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 680, "fontSize": 12 } },
+    { "type": "dropdown", "key": "application_type", "label": { "en": "Type of Application", "hi": "-" }, "options": ["Normal", "Tatkaal"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 660, "fontSize": 12 } },
+    { "type": "dropdown", "key": "booklet_type", "label": { "en": "Booklet Type", "hi": "-" }, "options": ["36 pages", "60 pages"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 640, "fontSize": 12 } },
+    { "type": "text", "key": "name_first", "label": { "en": "First Name", "hi": "नाम" }, "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 620, "fontSize": 12 } },
+    { "type": "text", "key": "name_middle", "label": { "en": "Middle Name", "hi": "मध्य नाम" }, "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 120, "y": 600, "fontSize": 12 } },
+    { "type": "text", "key": "name_surname", "label": { "en": "Surname", "hi": "उपनाम" }, "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 140, "y": 580, "fontSize": 12 } },
+    { "type": "checkbox", "key": "alias_name", "label": { "en": "Alias Name (Yes/No)", "hi": "-" }, "options": ["Yes"], "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 560, "fontSize": 12 } },
+    { "type": "checkbox", "key": "changed_name", "label": { "en": "Changed Name", "hi": "-" }, "options": ["Yes"], "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 540, "fontSize": 12 } },
+    { "type": "date", "key": "dob", "label": { "en": "Date of Birth", "hi": "-" }, "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 520, "fontSize": 12 } },
+    { "type": "text", "key": "place_of_birth", "label": { "en": "Place of Birth", "hi": "-" }, "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 500, "fontSize": 12 } },
+    { "type": "dropdown", "key": "gender", "label": { "en": "Gender", "hi": "-" }, "options": ["Male", "Female", "Other"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 480, "fontSize": 12 } },
+    { "type": "dropdown", "key": "marital_status", "label": { "en": "Marital Status", "hi": "-" }, "options": ["Single", "Married", "Widowed", "Divorced"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 460, "fontSize": 12 } },
+    { "type": "dropdown", "key": "citizenship_by", "label": { "en": "Citizenship by", "hi": "-" }, "options": ["Birth", "Descent", "Naturalization"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 440, "fontSize": 12 } },
+    { "type": "text", "key": "pan_number", "label": { "en": "PAN Number", "hi": "-" }, "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 420, "fontSize": 12 } },
+    { "type": "text", "key": "voter_id", "label": { "en": "Voter ID", "hi": "-" }, "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 400, "fontSize": 12 } },
+    { "type": "dropdown", "key": "employment_type", "label": { "en": "Employment Type", "hi": "-" }, "options": ["Government", "Private", "Self-employed", "Student", "Retired", "Others"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 380, "fontSize": 12 } },
+    { "type": "checkbox", "key": "parent_spouse_govt_employee", "label": { "en": "Parent/Spouse Govt Employee", "hi": "-" }, "options": ["Yes"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 360, "fontSize": 12 } },
+    { "type": "dropdown", "key": "education_qualification", "label": { "en": "Educational Qualification", "hi": "-" }, "options": ["10th", "12th", "Graduate", "Postgraduate", "Doctorate", "Other"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 340, "fontSize": 12 } },
+    { "type": "checkbox", "key": "non_ecr_category", "label": { "en": "Non-ECR Category", "hi": "-" }, "options": ["Yes"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 320, "fontSize": 12 } },
+    { "type": "text", "key": "distinguishing_mark", "label": { "en": "Distinguishing Mark", "hi": "-" }, "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 300, "fontSize": 12 } },
+    { "type": "text", "key": "aadhaar_number", "label": { "en": "Aadhaar Number", "hi": "-" }, "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 280, "fontSize": 12 } },
+    { "type": "text", "key": "family_details", "label": { "en": "Family Details (Father, Mother, Spouse)", "hi": "-" }, "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 260, "fontSize": 12 } },
+    { "type": "text", "key": "present_address", "label": { "en": "Present Address", "hi": "-" }, "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 240, "fontSize": 12 } },
+    { "type": "text", "key": "permanent_address", "label": { "en": "Permanent Address (if different)", "hi": "-" }, "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 220, "fontSize": 12 } },
+    { "type": "text", "key": "emergency_contact", "label": { "en": "Emergency Contact", "hi": "-" }, "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 200, "fontSize": 12 } },
+    { "type": "text", "key": "previous_passport_info", "label": { "en": "Previous Passport Info", "hi": "-" }, "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 180, "fontSize": 12 } },
+    { "type": "checkbox", "key": "criminal_record", "label": { "en": "Criminal Record", "hi": "-" }, "options": ["Yes"], "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 160, "fontSize": 12 } },
+    { "type": "text", "key": "fee_details", "label": { "en": "Fee Details", "hi": "-" }, "required": false, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 140, "fontSize": 12 } },
+    { "type": "signature", "key": "declaration_signature", "label": { "en": "Declaration Signature", "hi": "-" }, "required": true, "pdf_mapping": { "template": "passport_form.pdf", "page": 1, "x": 100, "y": 120, "fontSize": 12 } }
+  ]
+} 

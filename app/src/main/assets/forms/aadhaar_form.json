@@ -1,0 +1,29 @@
+{
+  "title": {
+    "en": "Aadhaar Enrolment/Update Form (UIDAI Form 5)",
+    "hi": "आधार नामांकन/अपडेट फॉर्म (UIDAI फॉर्म 5)"
+  },
+  "fields": [
+    { "type": "dropdown", "key": "purpose", "label": { "en": "Purpose", "hi": "उद्देश्य" }, "options": ["New Enrolment", "Update"], "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 700, "fontSize": 12 } },
+    { "type": "dropdown", "key": "resident_type", "label": { "en": "Resident Type", "hi": "निवासी प्रकार" }, "options": ["Resident", "Non-Resident Indian (NRI)"], "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 680, "fontSize": 12 } },
+    { "type": "text", "key": "name", "label": { "en": "Name", "hi": "नाम" }, "hint": { "en": "Full name as per document", "hi": "दस्तावेज़ के अनुसार पूरा नाम" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 660, "fontSize": 12 } },
+    { "type": "dropdown", "key": "gender", "label": { "en": "Gender", "hi": "लिंग" }, "options": ["Male", "Female", "Transgender"], "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 640, "fontSize": 12 } },
+    { "type": "date", "key": "dob_or_age", "label": { "en": "Date of Birth or Age", "hi": "जन्म तिथि / आयु" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 620, "fontSize": 12 } },
+    { "type": "dropdown", "key": "dob_type", "label": { "en": "Declared / Verified / Approximate", "hi": "घोषित / सत्यापित / अनुमानित" }, "options": ["Declared", "Verified", "Approximate"], "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 600, "fontSize": 12 } },
+    { "type": "text", "key": "email", "label": { "en": "Email ID", "hi": "ईमेल" }, "required": false, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 580, "fontSize": 12 } },
+    { "type": "text", "key": "mobile_number", "label": { "en": "Mobile Number", "hi": "मोबाइल नंबर" }, "hint": { "en": "For OTP / communication", "hi": "ओटीपी / संचार के लिए" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 560, "fontSize": 12 } },
+    { "type": "dropdown", "key": "basis_of_enrolment", "label": { "en": "Basis of Enrolment", "hi": "आधार के लिए आधार" }, "options": ["Document Based", "Head of Family Based"], "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 540, "fontSize": 12 } },
+    { "type": "text", "key": "care_of", "label": { "en": "Care Of (C/o)", "hi": "-" }, "required": false, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 520, "fontSize": 12 } },
+    { "type": "text", "key": "address", "label": { "en": "Address (House No, Street, etc.)", "hi": "पता (मकान संख्या, गली...)" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 500, "fontSize": 12 } },
+    { "type": "text", "key": "city", "label": { "en": "City / Village / Town", "hi": "शहर / गांव / कस्बा" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 480, "fontSize": 12 } },
+    { "type": "text", "key": "post_office", "label": { "en": "Post Office", "hi": "डाकघर" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 460, "fontSize": 12 } },
+    { "type": "text", "key": "pin_code", "label": { "en": "PIN Code", "hi": "पिन कोड" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 440, "fontSize": 12 } },
+    { "type": "text", "key": "district", "label": { "en": "District", "hi": "जिला" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 420, "fontSize": 12 } },
+    { "type": "text", "key": "state", "label": { "en": "State", "hi": "राज्य" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 400, "fontSize": 12 } },
+    { "type": "text", "key": "hof_aadhaar_number", "label": { "en": "HoF Aadhaar Number (if applicable)", "hi": "मुखिया का आधार संख्या" }, "required": false, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 380, "fontSize": 12 } },
+    { "type": "dropdown", "key": "relationship_with_hof", "label": { "en": "Relationship with HoF", "hi": "मुखिया से संबंध" }, "options": ["Father", "Mother", "Spouse", "Guardian"], "required": false, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 360, "fontSize": 12 } },
+    { "type": "text", "key": "legal_guardian_name", "label": { "en": "Legal Guardian Name", "hi": "अभिभावक का नाम" }, "required": false, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 340, "fontSize": 12 } },
+    { "type": "checkbox", "key": "fields_to_be_updated", "label": { "en": "Fields to be Updated", "hi": "संशोधित करने वाले क्षेत्र" }, "options": ["Name", "Address", "Gender", "DOB", "Mobile", "Email"], "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 320, "fontSize": 12 } },
+    { "type": "signature", "key": "signature", "label": { "en": "Signature / Thumb Impression", "hi": "हस्ताक्षर / अंगूठा निशान" }, "required": true, "pdf_mapping": { "template": "aadhaar_form.pdf", "page": 1, "x": 100, "y": 300, "fontSize": 12 } }
+  ]
+} 
